@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/show_popup_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.huangqihua.mytransparentpopuwindow.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/show_popup"
+                android:onClick="showPop"
+                android:layout_weight="1"
+                android:text="显示微信分享弹框"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/show_list_popup"
+                android:onClick="showListPop"
+                android:layout_weight="1"
+                android:text="显示ListView的弹框"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

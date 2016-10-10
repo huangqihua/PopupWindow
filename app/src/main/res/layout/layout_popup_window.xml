@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#443c3d3f"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#00a8e2"/>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="25dp">
+
+
+            <LinearLayout
+                    android:id="@+id/share_popup_pyq_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/share_pyq_normal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="微信朋友圈"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/share_popup_wx_friend_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/share_wx_normal"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="微信好友"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:background="#dcdcdc"
+              android:layout_height="1dp"/>
+
+        <Button
+                android:id="@+id/share_popup_bt_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="57dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
